@@ -1,0 +1,81 @@
+## INITIALIZING PROGRAM
+• Recuperara todos los datos reservados
+• La ventana mostrara:
+    - Valoración
+    - Genero
+    - Tiempo de publicacion
+    - Ofertas por temporada
+• Podras ampliar o acceder a cada categoria, mostrando todos
+  el almacenamiento disponible
+• Tambien, podras acceder a cada Ent., mostrando:
+    - Puntuación
+    - Generos
+    - Año de publicación
+    - Oferta disponible
+    - Titulo
+    ☼ Agregar shop
+    ☼ Agregar download
+
+• Construir un sistema de busqueda.
+• Siempre permanecera activo hasta terminar el programa:
+    • Tienda: Almacenando las compras reservadas, las cuales
+      creo que reservare para un proximo logeo.
+    • Descarga: Similar a lo anterior.
+
+//Tal vez agregar un apartado de comentarios.
+
+La clase shape unicamente tiene una variable: name sape; junto a 
+2 funciones: getname (definida) y getarea (sin definir).
+Las clases hijas como:
+    circulo:    variable (radio),   constructor (r,name),   funcion getarea (pi*radio*radio)
+    rectangulo: variables (x,y), constructor (x,y,name), funcion getarea (x*y);
+        cuadrado: constructor (x,name) → const.rectangulo (x,x,name).
+        Ella llama todas las funciones de la clase padre rectangulo.
+
+
+//Claro esta, cada clase tendra variables propias como precio.
+//Ademas, queria saber como acceder a cada catalogo. Una idea que tenia es, permitir que el usario "ingrese"
+//el "nombre" del catalogo, crear un objeto - constructor Medio(name), y dependiendo a ello generar un objeto de
+clase hija como pelicula, y de ello accionar una funcion (compartida por padre) modificada en la clase pelicula
+donde le permita abrir cierto archivo.txt correspondiente a los datos del objeto.
+
+************
+
+
+Apartir de un archivo previamente generado (catalogo.h) deberé:
+    •Generara un vector con todos los objetos almacenados
+    •Ramificara y generara categorias - 3 distintas (mostradas en cmd)
+    •Podras agregar (articulos nuevos) y retirar (articulos pasados) objetos del vector generado.
+    //Eliminar categorias?
+    •Acceder y observar los detalles de cada objeto.
+    //clase heredada: comentar?.
+
+
+
+***********************
+Catalogo.h 
+Objeto que funcionara como un VECTOR que ALMACENA objetos TIPO T
+
+• Reasignar memoria: Se creará un new vector (HEAP) con nuevo SIZE,  copiara punteros a objetos
+                     y reemplazará a THIS.
+
+• Constructor default: nullptr & size=0;
+• Constructor parametro: leera un archivo para almacenar
+• Constructor deep copy: Copiara los mismo datos con diferente direccion
+• Constructor move: Copiara direccion y eliminará el otro puntero.
+• Destructor: destruira la memoria dinamica HEAP
+
+• Some - utilizara funciones lambda.
+• SortToAll - sorting.
+
+• Agregar objeto: Reserva memoria (+1) y agrega el objeto
+• Remover objeto: Modifica memoria (-1) y elimina objeto (por indice)
+• Guardar objeto: Reesccribe el archivo.bin con los nuevos datos agregados.
+
+***************************
+Puntero accionar
+1. Registrar nuevo juego
+2. Retirar juego
+3. Mejores Ofertas
+4. Juegos mejor valorados
+5. Salir del programa.
