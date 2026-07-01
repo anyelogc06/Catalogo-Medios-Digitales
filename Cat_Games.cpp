@@ -82,7 +82,7 @@ void Game::add_info(istream& in) {
     if (num_p > 0) {
         plataformas = new TS[num_p];
         for (TI i = 0; i < num_p; ++i) {
-            cout << "  Plataforma [" << i + 1 << "]: ";
+            cout << "Plataforma [" << i + 1 << "]: ";
             getline(in, plataformas[i]);
         }
     } else {

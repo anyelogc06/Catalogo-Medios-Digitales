@@ -16,6 +16,7 @@ TS Channel::GetNameId() const { return detalles.name_ID; }
 
 void Channel::add_info(istream& in) {
     cout << "Ingrese el nombre-ID: ";
+    // cin.ignore();
     getline(in, detalles.name_ID);
     
     cout << "Ingrese el rating (0.0 - 10.0): ";

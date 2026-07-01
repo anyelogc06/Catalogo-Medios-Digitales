@@ -5,13 +5,18 @@
 using namespace std;
 
 template <typename T>
-bool EsMayor(const T& a, const T& b){
+bool EsMayorR(const T& a, const T& b){
     return a.GetRating() > b.GetRating();
 }
 
 template <typename T>
-bool EsMenor(const T& a, const T& b){
+bool EsMenorR(const T& a, const T& b){
     return a.GetRating() < b.GetRating();
+}
+
+template <typename T>
+bool EsMayorF(const T& a, const T& b){
+    return a.getOferta() > b.getOferta();
 }
 
 template <typename T, typename Compare>

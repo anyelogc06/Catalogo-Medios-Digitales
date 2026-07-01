@@ -7,6 +7,6 @@
 #include "Cat_Games.h"
 #include "Catalogo.h"
 
-void DemoCatalogo();
+void DemoCatalogoGame();
 
 #endif //__PROGRAMA_H__

@@ -79,3 +79,33 @@ Puntero accionar
 3. Mejores Ofertas
 4. Juegos mejor valorados
 5. Salir del programa.
+*******************
+Galaxia moovible a tiempo real
+Limites de velocidad, acciones legislativas (llamadas,
+reducir la velocidad enviando una señal para activar
+un mecanismo), arega clases herdedadas (tipo de vehiculos)
+//Dependiendo de la velocidad del vehiculo, realizar
+ciertas acciones
+
+Agregar un proyector de video e imagenes
+Ingresare los medios necesarios para hacer funcionar el app
+(imagenes, sonidos, video)
+Desarrollar catalogo fav
+
+**********************************
+
+ADAPTADO A UN CATALOGO DE PROFESIONALES INSCRITOS
+
+• Ventana de acceso
+    - Registrar → Comerciante || Comprador
+    - Acceder   → Comerciante || Comprador
+    - Admin ##
+
+• Comprador - Usuario:
+    - Disponibles
+    - Mayor puntuados
+    - Anteriormente contratados
+    - Recomendados
+    
+
+

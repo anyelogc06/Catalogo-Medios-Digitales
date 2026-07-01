@@ -4,7 +4,6 @@
 using namespace std;
 
 int main(){
-    //DemoCatalogo();
-    DemoCatalogo();
+    DemoCatalogoGame();
     return 0;
 }

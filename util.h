@@ -8,6 +8,7 @@
 // #include <optional>
 #include <utility>
 #include <iomanip>
+#include <cstdlib>
 
 using namespace std;
 
@@ -42,38 +43,17 @@ inline void WriteS(ostream& os, const TS& texto) {
     }
 }
 
-// inline void ReadS(istream& is, TS& texto) {
-//     size_t tam = 0;
-//     is.read(reinterpret_cast<char*>(&tam), sizeof(tam));
-//     texto.resize(tam);
-//     if (tam > 0) {
-//         is.read(&texto[0], tam);
-//     }
-// }
-
 inline void ReadS(istream& is, TS& texto) {
     size_t tam = 0;
-    // Si no puede leer el tamaño correctamente, limpia el string y sale
     if (!is.read(reinterpret_cast<char*>(&tam), sizeof(tam))) {
         texto.clear();
         return;
     }
-    
-    // VALIDACIÓN DE SEGURIDAD CONTRA BAD_ALLOC:
-    // Si el tamaño es ridículamente grande (por corrupción de archivo), abortamos
-    if (tam > 10000) { 
-        is.setstate(ios::failbit); // Marcamos el archivo como corrupto/fallido
-        texto.clear();
-        return;
-    }
-
     texto.resize(tam);
     if (tam > 0) {
         is.read(&texto[0], tam);
     }
 }
-
-//#define TT1 template<typename T1>
 
 
 #endif // __UTIL_H__

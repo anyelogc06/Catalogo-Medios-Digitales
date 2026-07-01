@@ -158,7 +158,8 @@ void Categoria<T>::guardar(const TS& archivo) const{
 template <typename U>
 ostream& operator<<(ostream& os, const Categoria<U>& x){
     for(TI i=0; i<x.m_size; ++i){
-        os << "*******\n" << x.m_vector[i]<< endl;
+        os << "*************************\n" 
+           << x.m_vector[i]<< endl;
     }
     return os;
 }

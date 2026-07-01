@@ -7,6 +7,7 @@ SRCS = main.cpp \
        Cat_Games.cpp \
 	   Programa.cpp \
 	   Medios.cpp \
+	   U_ControlMenu/ControlGame.cpp \
 
 OBJS = $(SRCS:.cpp=.o)
 
